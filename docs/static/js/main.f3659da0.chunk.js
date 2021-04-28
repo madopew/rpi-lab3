@@ -1,0 +1,2 @@
+(this["webpackJsonprpi-lab3"]=this["webpackJsonprpi-lab3"]||[]).push([[0],{27:function(e,t,c){"use strict";c.r(t);var r=c(0),n=c.n(r),i=c(14),j=c.n(i),s=c(15),a=c(1),b=c(6);var l=function(){return Object(b.jsx)("h1",{children:"Hello world!"})};var o=function(){return Object(b.jsx)(s.a,{children:Object(b.jsx)(a.c,{children:Object(b.jsx)(a.a,{path:"/",children:Object(b.jsx)(l,{})})})})};j.a.render(Object(b.jsx)(n.a.StrictMode,{children:Object(b.jsx)(o,{})}),document.getElementById("root"))}},[[27,1,2]]]);
+//# sourceMappingURL=main.f3659da0.chunk.js.map
