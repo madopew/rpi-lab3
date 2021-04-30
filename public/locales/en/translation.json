@@ -1,0 +1,12 @@
+
+{
+    "navbar": {
+        "poets": "Poets",
+        "desc": "Site Description",
+        "daily": "Poet of the Day",
+        "devs": "Developers",
+        "lang": "Language",
+        "en": "English",
+        "ru": "Russian"
+    }
+}
