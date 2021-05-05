@@ -11,6 +11,10 @@
         "label": "Listening is everything",
         "title": "Best Belarusian poets",
         "button": "Poets list"
+    },
+    
+    "poets": {
+        "search": "Search"
     }
 
 }

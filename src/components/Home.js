@@ -6,7 +6,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
-    const [t, setLang] = useLanguage();
+    const { t, setLang } = useLanguage();
 
     return (
         <>

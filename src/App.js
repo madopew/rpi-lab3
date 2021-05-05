@@ -19,7 +19,7 @@ function App() {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/poets" component={Poets} />
+                    <Route path="/poets/:id?" component={Poets} />
                 </Switch>
             </Router>
         </Suspense>
