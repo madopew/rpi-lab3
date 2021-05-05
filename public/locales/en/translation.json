@@ -5,5 +5,8 @@
         "desc": "Site Description",
         "daily": "Poet of the Day",
         "devs": "Developers"
+    },
+    "poets": {
+        "search": "Search"
     }
 }

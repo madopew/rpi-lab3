@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLanguage } from "./Hooks"
 
 function Home() {
-    const [ t, setLang ] = useLanguage();
+    const { t, setLang } = useLanguage();
 
     return (
         <div className="home-container">
