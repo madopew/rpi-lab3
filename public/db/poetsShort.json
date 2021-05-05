@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "name": {
+                "ru": "Альгерд Абуховіч",
+                "en": "Algerd Abuhovich"
+            },
+            "dob": "06-06-1840",
+            "dod": "22-06-1898",
+            "description": {
+                "ru": "Беларускі паэт, перакладчык",
+                "en": "Belarusian poet and interpreter"
+            },
+            "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%D0%9E%D0%B1%D1%83%D1%85%D0%BE%D0%B2%D0%B8%D1%87_%D0%9E%D0%BB%D1%8C%D0%B3%D0%B5%D1%80%D0%B4.jpg"
+        },
+        {
+            "id": 1,
+            "name": {
+                "ru": "Уладзімір Іванавіч Агіевіч",
+                "en": "Vladimir Ivanavich Agievich"
+            },
+            "dob": "21-12-2000",
+            "dod": "21-12-2150",
+            "description": {
+                "ru": "Беларускі савецкі літаратурны крытык і літаратуразнаўца, паэт, перакладчык",
+                "en": "Belarusian soviet literary critic and writer, poet, interpreter"
+            },
+            "photoUrl": "http://zhitlib.by/gallery/gen-4c9b21da7d98521bb71542bee5fd7391_450x604.02684563758.jpg"
+        }
+    ]
+}
