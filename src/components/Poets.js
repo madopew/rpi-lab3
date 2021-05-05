@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from "react-router-dom";
 import { Navbar, Nav, Container, Dropdown, InputGroup, FormControl } from "react-bootstrap";
 import { useJsonDB, useLanguage } from "./Hooks"
-import PoetsList from "./PoetList";
+import PoetsList from "./PoetsList";
 
 function Poets() {
     const { t, currLang, setLang } = useLanguage();
