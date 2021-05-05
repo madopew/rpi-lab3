@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLanguage } from "./Hooks"
 import "./home.css";
 import { Link } from "react-router-dom";
+import PoetOfTheDay from "./PoetOfTheDay";
 
 function Home() {
     const { t, setLang } = useLanguage();
@@ -50,7 +51,7 @@ function Home() {
                     </Button>{' '}
                 </Row>
             </Container>
-
+            <PoetOfTheDay />
             <Container style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
                 <Container fluid="md" className="h-100">
                     <Row className="h-100 d-flex align-items-center" xs={2} md={4} lg={8}>
