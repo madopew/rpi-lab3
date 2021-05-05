@@ -3,17 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from "react-router-dom";
 import { Navbar, Nav, Container, Dropdown, InputGroup, FormControl } from "react-bootstrap";
 import { useJsonDB, useLanguage } from "./Hooks"
+import PoetsList from "./PoetList";
 
 function Poets() {
     const { t, currLang, setLang } = useLanguage();
     const { id } = useParams();
 
-    const [dbLoaded, searchPoet] = useJsonDB("test.json");
+    const [dbLoaded, dbSearchPoet] = useJsonDB("poetsShort.json");
+    const [searchResult, setSearchResult] = useState(null);
 
     const [query, setQuery] = useState("");
     useEffect(() => {
         if (dbLoaded === true) {
-            let res = searchPoet("name." + currLang, query);
+            setSearchResult(dbSearchPoet("name." + currLang(), query));
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dbLoaded, query]);
@@ -49,10 +51,10 @@ function Poets() {
                 {
                     id === undefined ? dbLoaded === false ?
                         (
-                            <h1>db not loaded</h1>
+                            <h1>Loading...</h1>
                         ) :
                         (
-                            <h1>db loaded</h1>
+                            <PoetsList poets={searchResult} />
                         ) :
                         (
                             <h1>{id}</h1>

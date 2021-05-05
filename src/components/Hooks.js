@@ -2,14 +2,20 @@ import { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 function useLanguage() {
-    const [currLang, setLang] = useState(localStorage.getItem("lang") || "en");
     const { t, i18n } = useTranslation();
 
-    useEffect(() => {
-        localStorage.setItem("lang", currLang);
-        i18n.changeLanguage(currLang);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [currLang])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => i18n.changeLanguage(currLang()), []);
+
+    function currLang() {
+        let lang = localStorage.getItem("lang");
+        return lang === null ? "en" : lang;
+    }
+
+    function setLang(lang) {
+        localStorage.setItem("lang", lang);
+        i18n.changeLanguage(lang);
+    }
 
     return { t, currLang, setLang }
 }
