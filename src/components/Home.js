@@ -1,12 +1,10 @@
 import React from "react";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useTranslation } from "react-i18next";
 import { useLanguage } from "./Hooks"
 
 function Home() {
-    const { t } = useTranslation();
-    const [ lang, setLang ] = useLanguage();
+    const [ t, setLang ] = useLanguage();
 
     return (
         <div className="home-container">
@@ -22,11 +20,11 @@ function Home() {
                             <Nav.Link href="#devs">{t("navbar.devs")}</Nav.Link>
                             <Dropdown>
                                 <Dropdown.Toggle>
-                                    {t("navbar.lang")}
+                                    Language
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item onClick={ () => setLang("ru") }>{t("navbar.ru")}</Dropdown.Item>
-                                    <Dropdown.Item onClick={ () => setLang("en") }>{t("navbar.en")}</Dropdown.Item>
+                                    <Dropdown.Item onClick={ () => setLang("ru") }>Русский</Dropdown.Item>
+                                    <Dropdown.Item onClick={ () => setLang("en") }>English</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Nav>
