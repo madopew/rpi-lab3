@@ -5,5 +5,12 @@
         "desc": "Site Description",
         "daily": "Poet of the Day",
         "devs": "Developers"
+    },
+
+    "landing": {
+        "label": "Listening is everything",
+        "title": "Best Belarusian poets",
+        "button": "Poets list"
     }
+
 }
