@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Container, Button, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import { useJsonDB, useLanguage } from "./Hooks";
 
 export default function PoetOfTheDay(props) {
 
-    const { t, currLang } = useLanguage();
+    const { t, getCurrLang } = useLanguage();
 
     const [poet, setPoet] = useState(null);
 
@@ -33,10 +33,10 @@ export default function PoetOfTheDay(props) {
                     <Card className="text-center" style={{ width: '18rem' }} bg={"light"}>
                         <Card.Img variant="top" src={poet.photoUrl} />
                         <Card.Body>
-                            <Card.Title>{poet.name[currLang()]}</Card.Title>
+                            <Card.Title>{poet.name[getCurrLang()]}</Card.Title>
                             <Card.Subtitle className="font-style: italic">{poet.dob} - {poet.dod}</Card.Subtitle>
                             <Card.Text>
-                                {poet.description[currLang()]}
+                                {poet.description[getCurrLang()]}
                             </Card.Text>
                             <a className="btn btn-dark" href={"/poets/" + poet.id}>{t("landing.poetLink")}</a>
                         </Card.Body>
