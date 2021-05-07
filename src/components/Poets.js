@@ -6,7 +6,7 @@ import { useJsonDB, useLanguage } from "./Hooks"
 import PoetsList from "./PoetsList";
 
 function Poets() {
-    const { t, currLang, setLang } = useLanguage();
+    const { t, getCurrLang, setLang } = useLanguage();
     const { id } = useParams();
 
     const [dbLoaded, dbSearchPoet] = useJsonDB("poetsShort.json");
@@ -15,25 +15,37 @@ function Poets() {
     const [query, setQuery] = useState("");
     useEffect(() => {
         if (dbLoaded === true) {
-            setSearchResult(dbSearchPoet("name." + currLang(), query));
+            setSearchResult(dbSearchPoet("name." + getCurrLang(), query));
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dbLoaded, query]);
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" className="mb-5" variant="dark">
                 <Container fluid="md">
                     <Navbar.Brand href="/">Belarusian Poets</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
+                            {
+                                id === undefined ? (
+
                             <InputGroup className="mr-4">
                                 <FormControl
                                     value={query}
                                     onChange={e => setQuery(e.target.value)}
                                     placeholder={t("poets.search")} />
                             </InputGroup>
+                                ) : (
+                                    <>
+                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
+                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
+                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
+                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
+                                    </>
+                                )
+                            }
                             <Dropdown>
                                 <Dropdown.Toggle>
                                     Language

@@ -1,30 +1,33 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { useLanguage } from "./Hooks";
 import uuid from "react-uuid";
 
 export default function PoetsList(props) {
-    const { currLang } = useLanguage();
+    const { t, getCurrLang } = useLanguage();
 
     if (props.poets !== null && props.poets.length > 0) {
         var output = [];
         props.poets.forEach(poet => {
             output.push(
-                <Row key={uuid()}>
-                    <Col md={4}>
-                        <Image style={{width: "100px", height: "100px"}} src={poet.photoUrl} roundedCircle />
-                    </Col>
-                    <Col md={8}>
-                        <h2>{poet.name[currLang()]}</h2>
-                        <p>{poet.description[currLang()]}</p>
-                    </Col>
-                </Row>
+                <Col className="justify-content-center" md={4} key={uuid()}>
+                    <Card className="mb-5" style={{ width: "230px", height: "450px" }} >
+                        <Card.Img variant="top" style={{ height: "200px", objectFit: "cover", objectPosition: "left top" }} src={poet.photoUrl} />
+                        <Card.Body>
+                            <Card.Title>{poet.name[getCurrLang()]}</Card.Title>
+                            <Card.Text>{poet.description[getCurrLang()]}</Card.Text>
+                            <a className="mt-auto btn btn-dark" href={"/poets/"+poet.id}>{t("landing.poetLink")}</a>
+                        </Card.Body>
+                    </Card>
+                </Col>
             );
         });
         return (
             <>
-            <Container fluid="md">
-                {output}
-            </Container>
+                <Container fluid="md">
+                    <Row>
+                        {output}
+                    </Row>
+                </Container>
             </>
         );
     } else {
