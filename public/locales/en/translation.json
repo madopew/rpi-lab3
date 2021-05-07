@@ -10,7 +10,9 @@
     "landing": {
         "label": "Listening is everything",
         "title": "Best Belarusian poets",
-        "button": "Poets list"
+        "button": "Poets list",
+        "poetLink": "Poet page",
+        "poetOfTheDay": "Poet of the day"
     },
     
     "poets": {
