@@ -34,34 +34,38 @@ function Home() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Container style={{ height: "80vh", color: "#1ed760" }} fluid="lg" className="d-flex flex-column justify-content-center">
-                <Row className="justify-content-center">
-                    <h1 className="big-heading text-center">
-                        {t("landing.label")}
-                    </h1>
-                </Row>
-                <Row className="justify-content-center">
-                    <h2 className="text-center">
-                        {t("landing.title")}
-                    </h2>
-                </Row>
-                <Row className="justify-content-center">
-                    <Button className="rounded-pill btn-lg" variant="outline-success">
-                        {t("landing.button")}
-                    </Button>{' '}
-                </Row>
+
+            <Container fluid style={{ backgroundColor: "#2941ab" }}>
+                <Container style={{ height: "100vh", color: "#1ed760" }} fluid="lg" className="d-flex flex-column justify-content-center">
+                    <Row className="justify-content-center">
+                        <h1 className="big-heading text-center">
+                            {t("landing.label")}
+                        </h1>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <h2 className="text-center">
+                            {t("landing.title")}
+                        </h2>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Button className="rounded-pill btn-lg" variant="outline-success">
+                            {t("landing.button")}
+                        </Button>{' '}
+                    </Row>
+                </Container>
             </Container>
-            <PoetOfTheDay />
+            
+            <PoetOfTheDay id="daily" />
             <Container style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
                 <Container fluid="md" className="h-100">
                     <Row className="h-100 d-flex align-items-center" xs={2} md={4} lg={8}>
                         <Col className="">
                             <Image className="mr-2" src="/res/madi-icon.png" roundedCircle />
-                            <Link style={{color: "white" }} className="mb-0" to="github.com">Bakyt Madi</Link>
+                            <Link style={{ color: "white" }} className="mb-0" to="github.com">Bakyt Madi</Link>
                         </Col>
                         <Col className="">
                             <Image className="mr-2" src="/res/vlad-icon.png" roundedCircle />
-                            <Link style={{color: "white" }} className="mb-0" to="github.com">Maiski Vlad</Link>
+                            <Link style={{ color: "white" }} className="mb-0" to="github.com">Maiski Vlad</Link>
                         </Col>
                     </Row>
                 </Container>

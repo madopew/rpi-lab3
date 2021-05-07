@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_282" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="by.bsuir.oop.lab_3.model.impl.Car">
+    <void property="brand">
+     <string>BMW</string>
+    </void>
+    <void property="color">
+     <object class="java.lang.Enum" method="valueOf">
+      <class>by.bsuir.oop.lab_3.model.Color</class>
+      <string>WHITE</string>
+     </object>
+    </void>
+    <void property="length">
+     <int>870</int>
+    </void>
+    <void property="numOfDoors">
+     <int>5</int>
+    </void>
+    <void property="numOfWheels">
+     <int>4</int>
+    </void>
+    <void property="transportClass">
+     <string>Машина</string>
+    </void>
+    <void property="weight">
+     <int>400</int>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
