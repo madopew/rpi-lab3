@@ -5,9 +5,9 @@ function useLanguage() {
     const { t, i18n } = useTranslation();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => i18n.changeLanguage(currLang()), []);
+    useEffect(() => i18n.changeLanguage(getCurrLang()), []);
 
-    function currLang() {
+    function getCurrLang() {
         let lang = localStorage.getItem("lang");
         return lang === null ? "en" : lang;
     }
@@ -17,7 +17,7 @@ function useLanguage() {
         i18n.changeLanguage(lang);
     }
 
-    return { t, currLang, setLang }
+    return { t, getCurrLang, setLang }
 }
 export { useLanguage };
 
