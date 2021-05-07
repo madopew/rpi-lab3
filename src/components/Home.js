@@ -5,9 +5,26 @@ import { useLanguage } from "./Hooks"
 import "./home.css";
 import { Link } from "react-router-dom";
 import PoetOfTheDay from "./PoetOfTheDay";
+import { Globe2 } from "react-bootstrap-icons";
+
+export function DropdownLanguage() {
+    const { setLang } = useLanguage();
+
+    return (
+        <Dropdown >
+            <Dropdown.Toggle variant="dark">
+                <Globe2/>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+                <Dropdown.Item onClick={() => setLang("ru")}>Русский</Dropdown.Item>
+                <Dropdown.Item onClick={() => setLang("en")}>English</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+    );
+}
 
 function Home() {
-    const { t, setLang } = useLanguage();
+    const { t } = useLanguage();
 
     return (
         <>
@@ -21,15 +38,7 @@ function Home() {
                             <Nav.Link href="#desc">{t("navbar.desc")}</Nav.Link>
                             <Nav.Link href="#daily">{t("navbar.daily")}</Nav.Link>
                             <Nav.Link href="#devs">{t("navbar.devs")}</Nav.Link>
-                            <Dropdown>
-                                <Dropdown.Toggle>
-                                    Language
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item onClick={() => setLang("ru")}>Русский</Dropdown.Item>
-                                    <Dropdown.Item onClick={() => setLang("en")}>English</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                            <DropdownLanguage/>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -54,9 +63,10 @@ function Home() {
                     </Row>
                 </Container>
             </Container>
-            
+
             <PoetOfTheDay id="daily" />
-            <Container style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
+
+            <Container id="devs" style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
                 <Container fluid="md" className="h-100">
                     <Row className="h-100 d-flex align-items-center" xs={2} md={4} lg={8}>
                         <Col className="">

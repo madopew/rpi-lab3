@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from "react-router-dom";
-import { Navbar, Nav, Container, Dropdown, InputGroup, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Container, InputGroup, FormControl } from "react-bootstrap";
 import { useJsonDB, useLanguage } from "./Hooks"
 import PoetsList from "./PoetsList";
+import { DropdownLanguage } from "./Home";
 
 function Poets() {
-    const { t, getCurrLang, setLang } = useLanguage();
+    const { t, getCurrLang } = useLanguage();
     const { id } = useParams();
 
     const [dbLoaded, dbSearchPoet] = useJsonDB("poetsShort.json");
@@ -46,15 +47,7 @@ function Poets() {
                                     </>
                                 )
                             }
-                            <Dropdown>
-                                <Dropdown.Toggle>
-                                    Language
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item onClick={() => setLang("ru")}>Русский</Dropdown.Item>
-                                    <Dropdown.Item onClick={() => setLang("en")}>English</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                            <DropdownLanguage />
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
