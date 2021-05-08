@@ -42,11 +42,11 @@ function Poets() {
                                     </InputGroup>
                                 ) : (
                                     <>
-                                        <HashLink className="nav-link" smooth to="#main">{t("poets.main")}</HashLink>
                                         <HashLink className="nav-link" smooth to="#bio">{t("poets.bio")}</HashLink>
                                         <HashLink className="nav-link" smooth to="#photos">{t("poets.photos")}</HashLink>
                                         <HashLink className="nav-link" smooth to="#video">{t("poets.video")}</HashLink>
                                         <HashLink className="nav-link" smooth to="#map">{t("poets.map")}</HashLink>
+                                        <Link className="nav-link" to="/poets">{t("navbar.poets")}</Link>
                                     </>
                                 )
                             }

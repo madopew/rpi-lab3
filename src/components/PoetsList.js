@@ -7,7 +7,7 @@ export default function PoetsList(props) {
     const { t, getCurrLang } = useLanguage();
 
     if (props.poets !== null && props.poets.length > 0) {
-        var output = [];
+        let output = [];
         props.poets.forEach(poet => {
             output.push(
                 <Col className="justify-content-center" md={4} key={uuid()}>

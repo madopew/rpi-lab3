@@ -2,11 +2,128 @@
     "data": [
         {
             "id": 0,
-            "bio": []
+            "bio": [
+                {
+                    "date": "06.08.1840",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text": {
+                        "ru": "Происходил из шляхетской семьи (родители: Ричард и Каролина Обуховичи), связанной по женской линии с итальянским графским родом Бандинелли, отсюда литературные псевдонимы: Граф Бандинелли, Olgerd gr. Bandinelli. В 1852—1854 учился в Слуцкой кальвинистской гимназии.",
+                        "en": "Descended from a gentry family (parents: Richard and Carolina Obukhovichi), related by the female line with the Italian county family Bandinelli, hence the literary pseudonyms: Count Bandinelli, Olgerd gr. Bandinelli. In 1852-1854 he studied at the Slutsk Calvinist gymnasium."
+                    }
+                },
+                {
+                    "date": "06.08.1840",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text": {
+                        "ru": "Происходил из шляхетской семьи (родители: Ричард и Каролина Обуховичи), связанной по женской линии с итальянским графским родом Бандинелли, отсюда литературные псевдонимы: Граф Бандинелли, Olgerd gr. Bandinelli. В 1852—1854 учился в Слуцкой кальвинистской гимназии.",
+                        "en": "Descended from a gentry family (parents: Richard and Carolina Obukhovichi), related by the female line with the Italian county family Bandinelli, hence the literary pseudonyms: Count Bandinelli, Olgerd gr. Bandinelli. In 1852-1854 he studied at the Slutsk Calvinist gymnasium."
+                    }
+                },
+                {
+                    "date": "06.08.1840",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text": {
+                        "ru": "Происходил из шляхетской семьи (родители: Ричард и Каролина Обуховичи), связанной по женской линии с итальянским графским родом Бандинелли, отсюда литературные псевдонимы: Граф Бандинелли, Olgerd gr. Bandinelli. В 1852—1854 учился в Слуцкой кальвинистской гимназии.",
+                        "en": "Descended from a gentry family (parents: Richard and Carolina Obukhovichi), related by the female line with the Italian county family Bandinelli, hence the literary pseudonyms: Count Bandinelli, Olgerd gr. Bandinelli. In 1852-1854 he studied at the Slutsk Calvinist gymnasium."
+                    }
+                },
+                {
+                    "date": "06.08.1840",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text": {
+                        "ru": "Происходил из шляхетской семьи (родители: Ричард и Каролина Обуховичи), связанной по женской линии с итальянским графским родом Бандинелли, отсюда литературные псевдонимы: Граф Бандинелли, Olgerd gr. Bandinelli. В 1852—1854 учился в Слуцкой кальвинистской гимназии.",
+                        "en": "Descended from a gentry family (parents: Richard and Carolina Obukhovichi), related by the female line with the Italian county family Bandinelli, hence the literary pseudonyms: Count Bandinelli, Olgerd gr. Bandinelli. In 1852-1854 he studied at the Slutsk Calvinist gymnasium."
+                    }
+                },
+                {
+                    "date": "06.08.1840",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text": {
+                        "ru": "Происходил из шляхетской семьи (родители: Ричард и Каролина Обуховичи), связанной по женской линии с итальянским графским родом Бандинелли, отсюда литературные псевдонимы: Граф Бандинелли, Olgerd gr. Bandinelli. В 1852—1854 учился в Слуцкой кальвинистской гимназии.",
+                        "en": "Descended from a gentry family (parents: Richard and Carolina Obukhovichi), related by the female line with the Italian county family Bandinelli, hence the literary pseudonyms: Count Bandinelli, Olgerd gr. Bandinelli. In 1852-1854 he studied at the Slutsk Calvinist gymnasium."
+                    }
+                }
+            ],
+            "photos": [
+                "https://lh3.googleusercontent.com/proxy/-yZCkj9uGOU_ApXEwRj5kP0utali-IpZRKz8bFMQsd4kjl5RQTqI2IdA27zHTP5VJ9KGZjeBTW4akaLXwrsBn72VrM3gE-EAC6W54QEKJsiTe0YpdYH3",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Alhierd_Abuchovi%C4%8D_tomb.jpg/220px-Alhierd_Abuchovi%C4%8D_tomb.jpg",
+                "https://s1.livelib.ru/boocover/1002164588/200/6ffd/Ya%D1%9Egen_Guchok__Algerd_Abuhovich._Zacharavany_belaruskim_slovam.jpg",
+                "https://coollib.com/i/49/377349/_4.jpg"
+            ],
+            "video": "FzVhuUsfvlI",
+            "location": "!1m18!1m12!1m3!1d2469.890969965012!2d26.918311265664805!3d51.753317250513845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47287914b48ae991%3A0x30ba651b9f547730!2z0J3QvtCyLiDQkdC-0YA!5e0!3m2!1sru!2sby!4v1620492054960!5m2!1sru!2sby"
         },
         {
             "id": 1,
-            "bio": []
+            "bio": [
+                {
+                    "date": "26.09.1910",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text" : {
+                        "ru": "Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і.",
+                        "en": "He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family."
+                    }
+                },
+                {
+                    "date": "26.09.1910",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text" : {
+                        "ru": "Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і.",
+                        "en": "He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family."
+                    }
+                },
+                {
+                    "date": "26.09.1910",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text" : {
+                        "ru": "Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і.",
+                        "en": "He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family."
+                    }
+                },
+                {
+                    "date": "26.09.1910",
+                    "title": {
+                        "ru": "Рождение",
+                        "en": "Birth"
+                    },
+                    "text" : {
+                        "ru": "Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і. Нарадзіўся ў сялянскай сям’і.",
+                        "en": "He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family. He was born in a peasant family."
+                    }
+                }
+            ],
+            "photos": [
+                "https://lh3.googleusercontent.com/proxy/6V6TQMXoKi1gCgWsshR2qFSgEA248P1nMHtbSE72CXwyudX-HraMeFfZyNbonv2ozdbSNDrXGcuC6zZdfh3dFHodRPNIi5S4cdT-s75JttxUOTV1XkTJ6UBVPzOewKQ4ZcoNh8WnLdBOAbn5",
+                "https://upload.wikimedia.org/wikipedia/be/2/2e/%D0%92%D0%B0%D1%81%D1%96%D0%BB%D1%8C_%D0%9C%D0%B0%D1%82%D1%8D%D0%B2%D1%83%D1%88%D0%B0%D1%9E.jpg",
+                "https://lh3.googleusercontent.com/proxy/ndbNMNpfMxS6FrNaW1aUw6rgtJBJkBRWon5FNSEWUA175QbngoER0WzmaMcXn5mUIObkawC7kCCs9ktLrXigpsUE9QxIVdtFPVjXXwUgiaeZyhfNwh1KRIDFanhGSE669fadu-2U4wA6v5E9",
+                "https://be.wikiscan.org/gimg.php?type=edits&date=20080926&size=medium"
+            ],
+            "video": "a3n1ac3nN2g",
+            "location": "!1m18!1m12!1m3!1d4806.951615305154!2d71.39936839702004!3d51.0862887136606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a6cc006355%3A0x8f90912bc3efb511!2z0J3QsNC30LDRgNCx0LDQtdCyINCY0L3RgtC10LvQu9C10LrRgtGD0LDQu9GM0L3QsNGPINGI0LrQvtC70LAg0YTQuNC30LjQutC-LdC80LDRgtC10LzQsNGC0LjRh9C10YHQutC-0LPQviDQvdCw0L_RgNCw0LLQu9C10L3QuNGPINCzLiDQndGD0YAt0KHRg9C70YLQsNC9!5e0!3m2!1sru!2sby!4v1620491843717!5m2!1sru!2sby"
         }
     ]
 }
