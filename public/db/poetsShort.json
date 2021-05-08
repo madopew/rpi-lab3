@@ -27,6 +27,34 @@
                 "en": "Belarusian soviet literary critic and writer, poet, interpreter"
             },
             "photoUrl": "http://zhitlib.by/gallery/gen-4c9b21da7d98521bb71542bee5fd7391_450x604.02684563758.jpg"
+        },
+        {
+            "id": 2,
+            "name": {
+                "ru": "Янка Купала",
+                "en": "Yanka Kupala"
+            },
+            "dob": "21.12.1900",
+            "dod": "14.11.1930",
+            "description": {
+                "ru": "Белорусский советский поэт и переводчик, драматург, публицист.",
+                "en": "Belarusian Soviet poet and translator, playwright, publicist."
+            },
+            "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Yanka_Kupala.jpg"
+        },
+        {
+            "id": 3,
+            "name": {
+                "ru": "Якуб Колас",
+                "en": "Yakub Kolas"
+            },
+            "dob": "21.12.1882",
+            "dod": "14.11.1956",
+            "description": {
+                "ru": "Белорусский советский писатель, драматург, поэт и переводчик, общественный деятель",
+                "en": "Belarusian Soviet writer, playwright, poet and translator, public figure"
+            },
+            "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Yakub_Kolas_in_office.jpg/548px-Yakub_Kolas_in_office.jpg"
         }
     ]
 }
