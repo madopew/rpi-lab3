@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, Dropdown, Row, Image, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useLanguage } from "./Hooks"
+import useLanguage from "../hooks/Language"
 import "./home.css";
 import { Link } from "react-router-dom";
 import PoetOfTheDay from "./PoetOfTheDay";
