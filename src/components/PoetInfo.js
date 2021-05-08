@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import useJsonDB from "../hooks/JsonDB";
 import useLanguage from "../hooks/Language";
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, Row, Col } from "react-bootstrap";
 import uuid from "react-uuid";
 
 export default function PoetInfo(props) {
 
-    const { t, getCurrLang } = useLanguage();
+    const { getCurrLang } = useLanguage();
 
     const [allLoaded, setAllLoaded] = useState(false);
     const [poetInfo, setPoetInfo] = useState(null);
@@ -40,7 +40,6 @@ export default function PoetInfo(props) {
                 </TimelineItem>
             );
         });
-        console.log(res);
         return res;
     }
 
@@ -61,20 +60,29 @@ export default function PoetInfo(props) {
             {
                 allLoaded === true ? (
                     <>
-                        <Container>
-                            <h1>{poetInfo.name[getCurrLang()]}</h1>
-                        </Container>
-
-                        <Container id="bio">
-                            <Timeline lineColor="#ddd">
-                                {getBio()}
-                            </Timeline>
+                        <Container className="mb-5">
+                            <Row>
+                                <Col md={3} style={{height: "250px"}}>
+                                    <img className="w-100 h-100" style={{objectFit: "cover", objectPosition: "top"}} src={poetInfo.photoUrl} alt="Avatar" />
+                                </Col>
+                                <Col md={9}>
+                                    <h3>{poetInfo.name[getCurrLang()]}</h3>
+                                    <h4>{poetInfo.dob} - {poetInfo.dod}</h4>
+                                    <p>{poetInfo.description[getCurrLang()]}</p>
+                                </Col>
+                            </Row>
                         </Container>
 
                         <Container id="photos" className="mb-5">
                             <Carousel style={{ backgroundColor: "var(--dark)" }}>
                                 {getPhotos()}
                             </Carousel>
+                        </Container>
+
+                        <Container id="bio">
+                            <Timeline lineColor="#ddd">
+                                {getBio()}
+                            </Timeline>
                         </Container>
 
                         <Container id="video" style={{ height: "60vh" }} className="mb-5">
