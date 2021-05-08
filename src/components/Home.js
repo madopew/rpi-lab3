@@ -9,8 +9,7 @@ import { Globe2 } from "react-bootstrap-icons";
 import { HashLink } from "react-router-hash-link";
 import MadiIcon from "../res/madi-icon.png";
 import VladIcon from "../res/vlad-icon.png";
-import SecBack from "../res/main-back.png";
-import MainBack from "../res/back.png";
+import MainBack from "../res/main-back.png";
 
 
 export function DropdownLanguage() {
@@ -68,8 +67,8 @@ function Home() {
                 </Container>
             </Container>
 
-            <Container id="desc" fluid style={{ backgroundImage: 'url(' + MainBack + ')', backgroundSize: "cover", height: "100vh" }}>
-                <Container className="h-100" style={{ backgroundImage: 'url(' + SecBack + ')', backgroundSize: "cover" }}>
+            <Container id="desc" fluid style={{ backgroundImage: "linear-gradient(152deg, rgba(242,81,90,1) 0%, rgba(116,57,133,1) 68%, rgba(76,50,119,1) 100%)", height: "100vh" }}>
+                <Container className="h-100" style={{ backgroundImage: 'url(' + MainBack + ')', backgroundSize: "cover" }}>
                     <Row className="h-100">
                         <Col style={{color: "white"}} className="d-flex flex-column justify-content-center align-items-center">
                             <h2 className="display-2 font-weight-normal">{t("landing.siteDescTitle")}</h2>
