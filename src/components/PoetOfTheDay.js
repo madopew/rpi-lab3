@@ -27,7 +27,7 @@ export default function PoetOfTheDay(props) {
 
 
     return (
-        <Container id={props.id} fluid className="mb-5 d-flex flex-column align-items-center">
+        <Container id={props.id} style={props.style} fluid className="d-flex flex-column justify-content-center align-items-center">
             {
                 dbLoaded === true && poet !== null ? (
                     <>

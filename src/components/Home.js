@@ -9,6 +9,9 @@ import { Globe2 } from "react-bootstrap-icons";
 import { HashLink } from "react-router-hash-link";
 import MadiIcon from "../res/madi-icon.png";
 import VladIcon from "../res/vlad-icon.png";
+import SecBack from "../res/main-back.png";
+import MainBack from "../res/back.png";
+
 
 export function DropdownLanguage() {
     const { setLang } = useLanguage();
@@ -16,7 +19,7 @@ export function DropdownLanguage() {
     return (
         <Dropdown >
             <Dropdown.Toggle variant="dark">
-                <Globe2/>
+                <Globe2 />
             </Dropdown.Toggle>
             <Dropdown.Menu>
                 <Dropdown.Item onClick={() => setLang("ru")}>Русский</Dropdown.Item>
@@ -31,9 +34,9 @@ function Home() {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container fluid="md">
-                    <Link className="navbar-brand" to=".">Belarusian Poets</Link> {/*TODO Fix Link*/}
+                    <HashLink smooth className="navbar-brand" to="#land">Belarusian Poets</HashLink> {/*TODO Fix Link*/}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
@@ -41,13 +44,13 @@ function Home() {
                             <HashLink className="nav-link" smooth to="#desc">{t("navbar.desc")}</HashLink>
                             <HashLink className="nav-link" smooth to="#daily">{t("navbar.daily")}</HashLink>
                             <HashLink className="nav-link" smooth to="#devs">{t("navbar.devs")}</HashLink>
-                            <DropdownLanguage/>
+                            <DropdownLanguage />
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
-            <Container fluid style={{ backgroundColor: "#2941ab" }}>
+            <Container id="land" fluid style={{ backgroundColor: "#2941ab" }}>
                 <Container style={{ height: "100vh", color: "#1ed760" }} fluid="lg" className="d-flex flex-column justify-content-center">
                     <Row className="justify-content-center">
                         <h1 className="big-heading text-center">
@@ -64,10 +67,19 @@ function Home() {
                     </Row>
                 </Container>
             </Container>
-            <Container>
 
+            <Container id="desc" fluid style={{ backgroundImage: 'url(' + MainBack + ')', backgroundSize: "cover", height: "100vh" }}>
+                <Container className="h-100" style={{ backgroundImage: 'url(' + SecBack + ')', backgroundSize: "cover" }}>
+                    <Row className="h-100">
+                        <Col style={{color: "white"}} className="d-flex flex-column justify-content-center align-items-center">
+                            <h2 className="display-2 font-weight-normal">Some title</h2>
+                            <p className="lead font-weight-normal text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
-            <PoetOfTheDay id="daily" />
+
+            <PoetOfTheDay style={{ height: "100vh" }} id="daily" />
 
             <Container id="devs" style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
                 <Container fluid="md" className="h-100">
