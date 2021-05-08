@@ -8,20 +8,24 @@ export default function useJsonDB(jsonFileName) {
         fetch(process.env.PUBLIC_URL + "/db/" + jsonFileName)
             .then(res => res.json())
             .then(dat => {
+                if (dat === undefined) throw new Error(jsonFileName + " not found");
+                if (!dat.hasOwnProperty("data")) throw new Error("Invalid file format " + jsonFileName);
                 db.current = dat.data;
                 setLoaded(true);
             });
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    function search(key, value) {
+    function search(key, value, exact = false) {
         if (value === "") return db.current;
         let res = [];
         if (db.current !== null) {
             db.current.forEach(el => {
                 let val = getKeyRecursive(el, key);
-                if (val !== null && val.toLowerCase().indexOf(value.toLowerCase()) !== -1) {
-                    res.push(el);
+                if (val !== null) {
+                    if ((exact === true && val === value) || (exact === false && val.toLowerCase().indexOf(value.toLowerCase()) !== -1)) {
+                        res.push(el);
+                    }
                 }
             });
         }
