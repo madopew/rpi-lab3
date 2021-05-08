@@ -6,9 +6,12 @@ i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
+    backend: {
+      loadPath: process.env.PUBLIC_URL + "/locales/{{lng}}/translation.json"
+    },
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false,
     },
   });
 

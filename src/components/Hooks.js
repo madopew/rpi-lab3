@@ -26,7 +26,7 @@ function useJsonDB(jsonFileName) {
     const db = useRef(null);
 
     useEffect(() => {
-        fetch("/db/" + jsonFileName)
+        fetch(process.env.PUBLIC_URL + "/db/" + jsonFileName)
             .then(res => res.json())
             .then(dat => {
                 db.current = dat.data;
