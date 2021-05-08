@@ -68,7 +68,7 @@ export default function PoetInfo(props) {
                                 <Col md={9}>
                                     <h3>{poetInfo.name[getCurrLang()]}</h3>
                                     <h4>{poetInfo.dob} - {poetInfo.dod}</h4>
-                                    <p>{poetInfo.description[getCurrLang()]}</p>
+                                    <p>{poetInfo.longDescription[getCurrLang()]}</p>
                                 </Col>
                             </Row>
                         </Container>
