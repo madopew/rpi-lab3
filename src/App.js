@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
@@ -16,7 +16,7 @@ const Loader = () => (
 function App() {
     return (
         <Suspense fallback={<Loader/>}>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/poets/:id?" component={Poets} />
