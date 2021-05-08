@@ -2,6 +2,10 @@
     "data": [
         {
             "id": 0,
+            "longDescription": {
+                "ru": "Альгерд Абуховіч, Альгерд-Якуб Рышардавіч Абуховіч (25 ліпеня (6 жніўня) 1840, Калацічы Бабруйскі павет, цяпер у Глускі раён, Магілёўская вобласць — 10 (22) жніўня 1898, Слуцк; псеўданімы: Граф Бандынэлі; Olgerd gr. Bandinelli) — беларускі паэт, перакладчык.",
+                "en": "Algerd Obukhovich, Algerd-Yakub Ryshardovich Obukhovich (July 25 (August 6) 1840, Kalatsichi, Bobruisk district, now in Hlusk district, Mogilev region - August 10 (22) 1898, Slutsk; pseudonyms: Count Bandinelli; Olgerd gr. Bandinelli) poet, translator."
+            },
             "bio": [
                 {
                     "date": "06.08.1840",
@@ -70,6 +74,10 @@
         },
         {
             "id": 1,
+            "longDescription": {
+                "ru": "Уладзімір Іванавіч Агіевіч (26 верасня 1910, в. Пухавічы, цяпер Жыткавіцкі раён, Гомельская вобласць — 2 кастрычніка 1952) — беларускі савецкі літаратурны крытык і літаратуразнаўца, паэт, перакладчык[1].",
+                "en": "Vladimir Ivanovich Ogievich (September 26, 1910, Pukhovichi, now Zhitkovichi district, Gomel region - October 2, 1952) - Belarusian Soviet literary critic and literary critic, poet, translator [1]."
+            },
             "bio": [
                 {
                     "date": "26.09.1910",
@@ -127,6 +135,10 @@
         },
         {
             "id": 2,
+            "longDescription": {
+                "ru": "Я́нка Купа́ла, сапр. Іва́н Даміні́кавіч Луцэ́віч (25 чэрвеня (7 ліпеня) 1882, фальв. Вязынка былой Радашковіцкай воласці (цяпер Маладзечанскі раён, Мінская вобласць) — 28 чэрвеня 1942, Масква; Псеўданімы і крыптанімы: Адзін з «парнаснікаў»; Вайдэльота; Здарэнец; Левы; Марка Бяздольны; Ня-Гутнік; Стары Мінчук; Янук з-пад Мінска; Янук Купала; К.; І. К.; Я. К.; К-а; Л.; І. Л.; Л. І.) — беларускі паэт, драматург, публіцыст, перакладчык, класік беларускай літаратуры, адзін з заснавальнікаў новай беларускай літаратуры і літаратурнай мовы. Народны паэт Беларусі (1925). Акадэмік АН БССР (1928), АН УССР (1929). Лаўрэат Дзяржаўнай прэміі СССР (1941) за зборнік «Ад сэрца».",
+                "en": "Yanka Kupala, director Ivan Dominikovich Lutsevich (June 25 (July 7) 1882, folwark Viazynka of the former Radashkovichi volost (now Molodechno district, Minsk region) - June 28, 1942, Moscow; Aliases and cryptonyms: One of the \"boys\"; Incapable; Ne-Gutnik; Stary Minchuk; Yanuk from near Minsk; Yanuk Kupala; K .; I. K.; Y. K.; poet, playwright, publicist, translator, classic of Belarusian literature, one of the founders of the new Belarusian literature and literary language. People's Poet of Belarus (1925). Academician of the BSSR Academy of Sciences (1928), USSR Academy of Sciences (1929). Laureate of the USSR State Prize (1941) for the collection \"From the Heart\"."
+            },
             "bio": [
                 {
                     "date": "26.09.1920",
@@ -184,6 +196,10 @@
         },
         {
             "id": 3,
+            "longDescription": {
+                "ru": "Яку́б Ко́лас, Канстанці́н Міха́йлавіч Міцке́віч (22 кастрычніка (3 лістапада) 1882, засценак Акінчыцы Мінскага павета Мінскай губерні (цяпер у межах г. Стоўбцы) — 13 жніўня 1956, Мінск; Псеўданімы: Тарас Гушча, Карусь Лапаць, К. Адзінокі, К. Альбуцкі, Андрэй «сацыяліст», Тамаш Булава, Ганна Груд, Мікалаевец, Лесавік і інш.) — беларускі паэт, празаік, драматург, крытык, публіцыст, перакладчык, вучоны, педагог, грамадскі дзеяч; адзін з заснавальнікаў (з Янкам Купалам) сучаснай беларускай літаратуры і літаратурнай мовы. Народны паэт Беларусі (1926). Акадэмік АН Беларусі (1928). Заслужаны дзеяч навукі Беларусі (1944).",
+                "en": "Yakub Kolas, Konstantin Mikhailovich Mickiewicz (October 22 (November 3), 1882, Akinchytsy, Minsk County, Minsk Province (now within the city of Stolbtsy) - August 13, 1956, Minsk; Aliases: Taras Gushcha, Karus Lapat, K. Odinoki, K. Albutsky, Andrei \"Socialist\", Tamas Bulava, Anna Grud, Nikolayevets, Lesovik, etc.) - Belarusian poet, novelist, playwright, critic, publicist, translator, scientist, teacher, public figure; one of the founders (with Yanka Kupala) of modern Belarusian literature and literary language. People's Poet of Belarus (1926). Academician of the Academy of Sciences of Belarus (1928). Honored Scientist of Belarus (1944)."
+            },
             "bio": [
                 {
                     "date": "26.09.1882",
