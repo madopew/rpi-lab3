@@ -1,7 +1,6 @@
 {
   "name": "rpi-lab3",
   "version": "0.1.0",
-  "homepage": "/rpi-lab3",
   "dependencies": {
     "bootstrap": "^4.6.0",
     "i18next": "^20.2.2",

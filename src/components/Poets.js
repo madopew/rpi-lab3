@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from "react-router-dom";
 import { Navbar, Nav, Container, InputGroup, FormControl } from "react-bootstrap";
-import { useJsonDB, useLanguage } from "./Hooks"
+import useLanguage from "../hooks/Language";
+import useJsonDB from "../hooks/JsonDB";
 import PoetsList from "./PoetsList";
 import { DropdownLanguage } from "./Home";
 

@@ -1,5 +1,5 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { useLanguage } from "./Hooks";
+import useLanguage from "../hooks/Language";
 import uuid from "react-uuid";
 
 export default function PoetsList(props) {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
-import { useJsonDB, useLanguage } from "./Hooks";
+import useLanguage from "../hooks/Language";
+import useJsonDB from "../hooks/JsonDB";
 
 export default function PoetOfTheDay(props) {
 
