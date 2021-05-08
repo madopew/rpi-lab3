@@ -40,10 +40,7 @@ function Poets() {
                             </InputGroup>
                                 ) : (
                                     <>
-                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
-                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
-                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
-                                    <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
+                                   
                                     </>
                                 )
                             }

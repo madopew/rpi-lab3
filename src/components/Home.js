@@ -1,11 +1,14 @@
 import React from "react";
-import { Navbar, Nav, Container, Dropdown, Row, Button, Image, Col } from "react-bootstrap";
+import { Navbar, Nav, Container, Dropdown, Row, Image, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLanguage } from "./Hooks"
 import "./home.css";
 import { Link } from "react-router-dom";
 import PoetOfTheDay from "./PoetOfTheDay";
 import { Globe2 } from "react-bootstrap-icons";
+import { HashLink } from "react-router-hash-link";
+import MadiIcon from "../res/madi-icon.png";
+import VladIcon from "../res/vlad-icon.png";
 
 export function DropdownLanguage() {
     const { setLang } = useLanguage();
@@ -30,14 +33,14 @@ function Home() {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container fluid="md">
-                    <Navbar.Brand href="/">Belarusian Poets</Navbar.Brand>
+                    <Link className="navbar-brand" to=".">Belarusian Poets</Link> {/*TODO Fix Link*/}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="/poets">{t("navbar.poets")}</Nav.Link>
-                            <Nav.Link href="#desc">{t("navbar.desc")}</Nav.Link>
-                            <Nav.Link href="#daily">{t("navbar.daily")}</Nav.Link>
-                            <Nav.Link href="#devs">{t("navbar.devs")}</Nav.Link>
+                            <Link className="nav-link" to="/poets">{t("navbar.poets")}</Link>
+                            <HashLink className="nav-link" smooth to="#desc">{t("navbar.desc")}</HashLink>
+                            <HashLink className="nav-link" smooth to="#daily">{t("navbar.daily")}</HashLink>
+                            <HashLink className="nav-link" smooth to="#devs">{t("navbar.devs")}</HashLink>
                             <DropdownLanguage/>
                         </Nav>
                     </Navbar.Collapse>
@@ -57,25 +60,25 @@ function Home() {
                         </h2>
                     </Row>
                     <Row className="justify-content-center">
-                        <Button className="rounded-pill btn-lg" variant="outline-success">
-                            {t("landing.button")}
-                        </Button>{' '}
+                        <Link className="btn btn-lg rounded-pill btn-outline-success" to="/poets">{t("landing.button")}</Link>
                     </Row>
                 </Container>
             </Container>
+            <Container>
 
+            </Container>
             <PoetOfTheDay id="daily" />
 
             <Container id="devs" style={{ height: "12vh", color: "gray" }} fluid className="bg-dark">
                 <Container fluid="md" className="h-100">
                     <Row className="h-100 d-flex align-items-center" xs={2} md={4} lg={8}>
                         <Col className="">
-                            <Image className="mr-2" src="/res/madi-icon.png" roundedCircle />
-                            <Link style={{ color: "white" }} className="mb-0" to="github.com">Bakyt Madi</Link>
+                            <Image className="mr-2" src={MadiIcon} roundedCircle />
+                            <a style={{ color: "white" }} className="mb-0" href="https://github.com/madopew">Bakyt Madi</a>
                         </Col>
                         <Col className="">
-                            <Image className="mr-2" src="/res/vlad-icon.png" roundedCircle />
-                            <Link style={{ color: "white" }} className="mb-0" to="github.com">Maiski Vlad</Link>
+                            <Image className="mr-2" src={VladIcon} roundedCircle />
+                            <a style={{ color: "white" }} className="mb-0" href="https://github.com/vladmaiski">Maiski Vlad</a>
                         </Col>
                     </Row>
                 </Container>

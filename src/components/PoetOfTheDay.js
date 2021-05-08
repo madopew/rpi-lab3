@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useJsonDB, useLanguage } from "./Hooks";
 
 export default function PoetOfTheDay(props) {
@@ -38,7 +39,7 @@ export default function PoetOfTheDay(props) {
                             <Card.Text>
                                 {poet.description[getCurrLang()]}
                             </Card.Text>
-                            <a className="btn btn-dark" href={"/poets/" + poet.id}>{t("landing.poetLink")}</a>
+                            <Link className="btn btn-dark" to={"/poets/" + poet.id}>{t("landing.poetLink")}</Link>
                         </Card.Body>
                     </Card>
                     </>
