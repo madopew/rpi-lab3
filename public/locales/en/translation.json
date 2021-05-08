@@ -16,7 +16,11 @@
     },
     
     "poets": {
-        "search": "Search"
+        "search": "Search",
+        "main": "Preview",
+        "bio": "Biography",
+        "photos": "Gallery",
+        "video": "Video",
+        "map": "Location"
     }
-
 }
